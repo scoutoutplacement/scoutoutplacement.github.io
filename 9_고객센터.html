@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang='ko'>
+    
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta http-equiv='Expires' content='0' />
+        <meta http-equiv='Imagetoolbar' content='no'>
+        <meta http-equiv='Cache-Control' content='no-cache' />
+        <meta http-equiv='Pragma' content='no-cache' />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='viewport' content='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width' />
+        <title>Scout Outplacement</title>
+        <meta name='description' content=''>
+        <meta name='keywords' content='' />
+        <meta property='og:type' content='website'>
+        <meta property='og:title' content='Scout Outplacement'>
+        <meta property='og:description' content=''>
+        <meta property='og:keywords' content=''>
+        <meta property='og:image' content='/img/admin_logo.png'>
+        <meta property='og:url' content=''>
+        
+        <link rel='shortcut icon' href='https://www.scout.co.kr/favicon.ico'>
+    
+        <link rel='stylesheet' href='css/Main.css'>
+        <link rel='stylesheet' href='css/Main_Layout.css'>
+        <link rel='stylesheet' href='css/Layout.css'>
+        <link rel='stylesheet' href='css/Sub_Layout.css'>
+        <link rel='stylesheet' href='css/Sub_Content.css'>
+        <link rel='stylesheet' href='css/Init.css'>
+        <link rel='stylesheet' href='css/JQuery_Nice_Select.css'>
+        <link rel='stylesheet' href='css/JQuery_UI.css'>
+        <link rel='stylesheet' href='css/slick.css'>
+        <link rel='stylesheet' href='css/slick-theme.css'>
+    
+        <script src='js/JQuery.js'></script>
+        <script src='js/JQuery_Nice_Select.js'></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/scout.js"></script>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        
+        <!-- includes aos --> 
+        <link rel='stylesheet' href='https://unpkg.com/aos@2.3.1/dist/aos.css'> 
+        <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script> 
+        
+    
+        <!-- include swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    </head>
+
+<body>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f43aa2f6b7a1925b650c5e373d9baf94"></script>
+    <div id="wrapper">
+        <header id="header">
+            <div class="wrap">
+                <div class="logo">
+                    <h1>
+                    <a href="/" class="logo_anchor">SCOUT Outplacement</a>
+                    </h1>
+                </div>
+                <div id="lnb" class="lnb">
+                    <div class="menu_show">
+                    <button type="button" class="menu_btn">메뉴 열기</button>
+                    </div>
+                    <nav class="menu">
+                        <h2 class="skip">메인 메뉴</h2>
+                        <div class="depth depth1">
+                        <ul class="depth_list depth1_list">
+                            
+                            <li class="depth_item depth1_item">
+                            <a href="2_기업-컨설팅.html" class="depth_text depth1_text pc">재취업지원서비스</a>
+                            <button class="depth_text depth1_text mobile">재취업지원서비스</button>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                <li class="depth_item depth2_item">
+                                    <a href="2_기업-컨설팅.html" class="depth_text depth2_text">기업 컨설팅</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="3_직원전직-프로그램.html" class="depth_text depth2_text">직원전직 프로그램</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="4_임원전직-프로그램.html" class="depth_text depth2_text">임원전직 프로그램</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="5_창업-프로그램.html" class="depth_text depth2_text">창업 프로그램</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="6_귀농귀촌-프로그램.html" class="depth_text depth2_text">귀농귀촌 프로그램</a>
+                                </li>
+                                </ul>  
+                            </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                            <a href="7_교육-프로그램.html" class="depth_text depth1_text pc">생애설계교육</a>
+                            <button class="depth_text depth1_text mobile">생애설계교육</button>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                <li class="depth_item depth2_item">
+                                    <a href="7_교육-프로그램.html" class="depth_text depth2_text">교육 프로그램</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="8_심리안정-프로그램.html" class="depth_text depth2_text">심리안정 프로그램</a>
+                                </li>
+                                </ul>
+                            </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                            <a href="javascript:OnSelectUrl('/service/recruit');" class="depth_text depth1_text pc">채용정보</a>
+                            <button class="depth_text depth1_text mobile">채용정보</button>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                <li class="depth_item depth2_item">
+                                    <a href="/recruit/scout" class="depth_text depth2_text">취업포털</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="/recruit/scout" class="depth_text depth2_text">헤드헌팅</a>
+                                </li>
+                                </ul>
+                            </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                            <a href="9_고객센터.html" class="depth_text depth1_text pc">고객센터</a>
+                            <button class="depth_text depth1_text mobile">고객센터</button>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                <li class="depth_item depth2_item">
+                                    <a href="9_고객센터.html" class="depth_test depth2_text">문의하기</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="/custermer/fag" class="depth_text depth2_text">FAQ</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="/customer/notice" class="depth_text depth2_text">공지사항</a>
+                                </li>
+                                <li class="depth_item depth2_item">
+                                    <a href="/customer/pds" class="depth_text depth2_text">자료실</a>
+                                </li>
+                                </ul>
+                            </div>
+                            </li>
+        
+                        </ul>
+                        </div>
+                        
+                        <div class="link">
+                        <ul class="link_list">
+                            <li class="link_item">
+                                <a href="javascript:OnShowUserLogin();" class="link_anchor login">로그인</a>
+                            </li>
+                            <li class="link_item">
+                                <a href="/member/join_step_1" class="link_anchor register">회원가입</a>
+                            </li>
+                            <li class="link_item">
+                                <a href="9_고객센터.html" class="link_anchor enquiry">문의하기</a>
+                            </li>
+                        </ul>
+                        </div>
+        
+                        <div class="menu_hide">
+                        <button type="button" class="menu_btn">메뉴 닫기</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <script>
+            function OnSelectUrl(url){
+                var width = $(window).width();
+                if(parseInt(width) > 1000){
+                    location.href = url;
+                }
+            }
+        </script>
+
+        <div id="container">
+            <main class="colgroup">
+                <article>
+                    <header class="sub_head">
+                        <div class="sub_visual customer">
+                            <h2 class="sub_title">고객센터</h2>
+                        </div>
+                    </header>
+                    <div id="side" class="side">
+                        <div class="side_menu">
+                            <div class="wrap">
+                                <nav class="menu">
+                                    <h2 class="skip">서브메뉴</h2>
+                                    
+                                    <div class="depth depth1">
+                                        <ul class="depth_list depth1_list">
+                                            <li class="depth_item depth1_item current"><a href="9_고객센터.html" class="depth_text depth1_text">문의하기</a></li>
+                                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">FAQ</a></li>
+                                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">공지사항</a></li>
+                                            <li class="depth_item depth1_item"><a href="" class="depth_text depth1_text">자료실</a></li>                                            
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap clearfix">                        
+                        <div id="contents" class="sub1_1">
+                            <div class="box bg title">
+                                <div class="wrap">
+                                    <div class="box_cont">
+                                        <h2 class="title">문의하기</h2>
+                                        <p class="text"> 스카우트 재취업지원 서비스에 관심가져주셔서 감사합니다.</p>
+                                        <p class="text">문의사항을 남겨주시면 신속한 답변 드리도록 하겠습니다.</p>
+                                    </div>
+
+                                    <p class="inquiry_time">
+                                        평일 오전 9:00 ~ 오후 6:00 <br>
+                                        (점심시간 오후 12:00 ~ 오후 1:00) <br>
+                                        ※ 주말 및 공휴일 휴무
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="box bg inquiry">
+                                <div class="wrap">
+                                    <div class="box_cont">                                    
+                                        <div class="box_inquiry">
+                                            <!-- <p class="inquiry_title">재취업지원서비스 상담 신청</p> -->
+
+                                            <ul class="inquiry_detail"> 
+                                                <li><span class="em bg">Tel</span> : 02) 02-2188-6723</li>
+                                                <li><span class="em bg">Email</span> : jusang.park@scout.co.kr</li>
+                                                <li><span class="em bg">Office</span> : 서울시 강남구 언주로 431 삼봉빌딩 5층 </li>
+                                                <li><span class="em bg">Fax</span> : 02-2188-6844</li>
+                                            </ul>
+                                            <ul class="box_btn">
+                                                <li><a href="javascript:OnContactUSLayer();" class="btn_inquiry">문의하기</a></li>
+                                                <li><a href="" class="btn_faq">자주 묻는 질문</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="box_map">
+                                            <div id="map" style="width:auto;height:400px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </div>
+
+        <div class="footer service">
+            <footer id="footer_box">
+                <div class="wrap">
+                <img src='images/common/footer_logo.png' alt="SCOUT Outplacement" class="footer_logo">
+                    <div class="footer_info">
+                    <ul class="info_list">
+                        <li class="info_item">
+                        <address>서울시 강남구 언주로 431 삼봉빌딩 3~5층, 7~8층</address> / 대표자 : 문영철 / 개인정보관리 책임자 : 박준석
+                        </li>
+                        <li class="info_item">사업자등록번호 : 124-81-57055 <span>유료직업소개사업등록번호 : 제2015-3220163-14-5-00051호</span></li>                        
+                        <li class="info_item"> 전화 : 02-2188-6723 / 팩스 : 02-2188-6844 / 대표 메일 <a href="mailto:jusang.park@scout.co.kr">jusang.park@scout.co.kr</a></li>
+                        <li class="info_item copy">COPYRIGHT ⓒ 1998-2022 SCOUT CO., LTD. ALL RIGHTS RESERVED.</li>
+                    </ul>
+                </div>
+                </div>
+            </footer>          
+        </div> 
+    </div>
+
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.501981, 127.042701), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var markerPos = new kakao.maps.LatLng(37.501981, 127.042701);
+        
+        var marker = new kakao.maps.Marker({position:markerPos});
+        marker.setMap(map);
+    </script>
+
+	<div class="popup login" id="pop_user_login" >
+        <div class="popup_box" style="width:505px;">
+            <div class="popup_head">
+                <span class="popup_title">로그인</span>
+            </div>
+            <div class="popup_cont">
+                <ul class="inp_list">
+                    <li class="inp_item">
+                        <input type="text" id="POP_USER_ID" name="POP_USER_ID" class="login_inp" title="아이디" placeholder="아이디" />
+                    </li>
+                    <li class="inp_item">
+                        <input type="password" id="POP_USER_PWD" name="POP_USER_PWD" class="login_inp b_red" title="비밀번호" placeholder="비밀번호" />
+                    </li>
+                </ul>
+                <div class="check_list">
+                    <span class="check">
+                        <input type="checkbox" id="POP_USER_SAVE_LOGIN" name="POP_USER_SAVE_LOGIN" value="SAVE_LOGIN">
+                        <label for="POP_USER_SAVE_LOGIN">로그인 유지</label>
+                    </span>
+                    <span class="check">
+                        <input type="checkbox" id="POP_USER_SAVE_ID" name="POP_USER_SAVE_ID" value="SAVE_ID">
+                        <label for="POP_USER_SAVE_ID">아이디 저장</label>
+                    </span>
+                </div>
+                <input type="button" class="btn red" onclick="javascript:OnUserLogin();" value="로그인">
+                <ul class="link_list">
+                    <li class="link_item join">
+                        <a href="javascript:OnUserPopJoin();">회원가입</a>
+                    </li>
+                    <li class="link_item findlogin">
+                        <a href="javascript:OnUserPopIdPwdSearch();">아이디 / 비밀번호 찾기</a>
+                    </li>
+                </ul>
+            </div>
+            <input type="button" class="popup_close" onclick="javascript:OnCloseUserLogin();" value="닫기"/>
+        </div>
+    </div>
+
+<script>
+	function OnUserPopJoin(){
+		var url = "/member/join_step_1";
+		location.href =url;
+	}
+	function OnUserPopIdPwdSearch(){
+		var url = "/member/id_pwd_search";
+		location.href =url;
+	}
+	$(document).ready(function(){
+		var g_member_save_id = getSaveIDCookie("member_save_id");
+		if(g_member_save_id!=null){
+			$("#POP_USER_ID").val(g_member_save_id);
+		}
+	});
+	function setSaveIDCookie(name,value,days) {
+		var expires = "";
+		if (days) {
+			var date = new Date();
+			date.setTime(date.getTime() + (days*24*60*60*1000));
+			expires = "; expires=" + date.toUTCString();
+		}
+		document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+	}
+
+	function getSaveIDCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0;i < ca.length;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+		}
+		return null;
+	}
+	
+	function OnShowUserLogin(){		
+		$("#pop_user_login").addClass("active");
+	}
+
+	function OnCloseUserLogin(){
+		$("#pop_user_login").removeClass("active");		
+	}
+	function OnUserLogin(){
+		if($("#POP_USER_ID").val()==""){
+			alert("아이디를 입력해주세요.");
+			return;
+		}
+		if($("#POP_USER_PWD").val()==""){
+			alert("비밀번호를 입력해주세요.");
+			return;
+		}
+		var SAVE_LOGIN_YN = "";
+		if($("input[name=POP_USER_SAVE_LOGIN]:checked").length > 0){
+			SAVE_LOGIN_YN= "Y";			
+		}
+		else{
+			SAVE_LOGIN_YN = "N";
+		}
+
+
+		var data = {};
+		data.ID = $("#POP_USER_ID").val();
+		data.PWD = $("#POP_USER_PWD").val();
+		data.SAVE_LOGIN_YN = SAVE_LOGIN_YN;
+		$.ajax({
+			url: "/user/login",
+			type: "POST",
+			data: JSON.stringify(data),
+			contentType: "application/json",
+			success: function(data) {
+				Callback_OnUserLogin(data);
+			},
+			error: function(err) {
+				alert(err.responseText);
+			}
+		});
+	}
+	function Callback_OnUserLogin(result){
+            var jsonData = JSON.parse(result);
+            var jsonResult = jsonData.data[0][0];
+            if(jsonResult.result=="login_ok"){
+				if($("input[name=POP_USER_SAVE_ID]:checked").length > 0){
+					setSaveIDCookie("member_save_id",$("#POP_USER_ID").val(),30);
+				}
+				
+				OnCloseUserLogin();
+
+				var TOP_MENU = "USER_SERVICE";
+				var cur_url =  window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+				if (TOP_MENU == "USER_MAIN" || TOP_MENU=="USER_PROC" || TOP_MENU=="USER_CUSTOMER" || TOP_MENU=="USER_CUSTOMER"){
+					var url = "/member/service";
+					location.href = url;
+				}
+				else if(cur_url.indexOf("/recruit/scout_jobs_detail") != -1 || cur_url.indexOf("/member/scout_resume_step1") != -1 || cur_url.indexOf("/member/scout_resume_list") != -1){
+					location.href = location.href;
+				}
+				else if(cur_url.indexOf("/recruit/search_jobs_detail") != -1 || cur_url.indexOf("/member/search_resume") != -1 || cur_url.indexOf("/member/search_resume_list") != -1){
+					location.href = location.href;
+				}	
+				else if(cur_url.indexOf("/member/scout_id_search") != -1 || cur_url.indexOf("/member/scout_pw_search") != -1){
+					location.href = location.href;
+				}
+				else if(cur_url.indexOf("/member/scout_join_step_1") != -1 || cur_url.indexOf("/member/scout_join_step_2") != -1 || cur_url.indexOf("/member/scout_join_step_3") != -1){
+					location.href = location.href;
+				}
+				else{
+					location.href = location.href;
+				}
+				/*
+				var cur_url =  window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+				if(cur_url.indexOf("/recruit/scout_jobs_detail") != -1 || cur_url.indexOf("/member/scout_resume_step1") != -1 || cur_url.indexOf("/member/scout_resume_list") != -1){
+					location.href = location.href;
+				}
+				else if(cur_url.indexOf("/recruit/search_jobs_detail") != -1 || cur_url.indexOf("/member/search_resume") != -1 || cur_url.indexOf("/member/search_resume_list") != -1){
+					location.href = location.href;
+				}	
+				else if(cur_url.indexOf("/member/scout_id_search") != -1 || cur_url.indexOf("/member/scout_pw_search") != -1){
+					location.href = location.href;
+				}
+				else if(cur_url.indexOf("/member/scout_join_step_1") != -1 || cur_url.indexOf("/member/scout_join_step_2") != -1 || cur_url.indexOf("/member/scout_join_step_3") != -1){
+					location.href = location.href;
+				}
+				else{
+					var url = "/member/service";
+					location.href = url;
+				}
+                */
+            }
+            else {
+                var result = jsonResult.result;
+                if (result == "empty_id"){
+                    alert("사용자 아이디가 없습니다. 다시 입력해주세요.");                    
+                }
+				else if (result == "fail_pwd"){
+                    alert("비밀번호가 틀렸습니다.");                    
+                }
+				else{
+					alert(jsonResult.message);
+				}
+            }
+        }
+</script>
+
+<!-- 활성화 시 class active -->
+	<div class="popup login" id="pop_scout_user_login" >
+        <div class="popup_box" style="width:505px;">
+            <div class="popup_head">
+                <span class="popup_title">스카우트 로그인</span>
+            </div>
+            <div class="popup_cont">
+                <ul class="inp_list">
+                    <li class="inp_item">
+                        <input type="text" id="POP_SCOUT_USER_ID" name="POP_SCOUT_USER_ID" class="login_inp" title="아이디" placeholder="아이디" />
+                    </li>
+                    <li class="inp_item">
+                        <input type="password" id="POP_SCOUT_USER_PWD" name="POP_SCOUT_USER_PWD" class="login_inp b_red" title="비밀번호" placeholder="비밀번호" />
+                    </li>
+                </ul>                
+                <input type="button" class="btn red" onclick="javascript:OnScoutUserLogin();" value="로그인">
+                <ul class="link_list">
+                    <li class="link_item join">
+                        <a href="javascript:OnScoutUserPopJoin();">회원가입</a>
+                    </li>
+                    <li class="link_item findlogin">
+                        <a href="javascript:OnScoutUserPopIdPwdSearch();">아이디 / 비밀번호 찾기</a>
+                    </li>
+                </ul>
+            </div>
+            <input type="button" class="popup_close" onclick="javascript:OnCloseScoutUserLogin();" value="닫기"/>
+        </div>
+    </div>
+
+    <script>
+        function OnScoutUserPopJoin(){
+            var url = "/member/scout_join_step_1";
+            location.href =url;
+        }
+        function OnScoutUserPopIdPwdSearch(){
+            var url = "/member/scout_id_search";
+            location.href =url;
+        }
+        
+        
+        function OnShowScoutUserLogin(){		
+            $("#POP_SCOUT_USER_ID").val("");
+            $("#POP_SCOUT_USER_PWD").val("");
+            $("#pop_scout_user_login").addClass("active");
+        }
+
+        function OnCloseScoutUserLogin(){
+            $("#pop_scout_user_login").removeClass("active");		
+        }
+        function OnScoutUserLogin(){
+            if($("#POP_SCOUT_USER_ID").val()==""){
+                alert("아이디를 입력해주세요.");
+                return;
+            }
+            if($("#POP_SCOUT_USER_PWD").val()==""){
+                alert("비밀번호를 입력해주세요.");
+                return;
+            }
+            
+            var data = {};
+            data.scout_id = $("#POP_SCOUT_USER_ID").val();
+            data.scout_pwd = $("#POP_SCOUT_USER_PWD").val();
+            
+            $.ajax({
+                url: "/member/scout_user_login_process_ajax_api",
+                type: "POST",
+                data: JSON.stringify(data),
+                contentType: "application/json",
+                success: function(data) {
+                    Callback_OnScoutUserLogin(data);
+                },
+                error: function(err) {
+                    alert(err.responseText);
+                }
+            });
+        }
+        function Callback_OnScoutUserLogin(result){
+                var jsonData = JSON.parse(result);            
+                if(jsonData.result=="ok"){				
+                    alert("로그인되었습니다.");
+                    OnCloseScoutUserLogin();      				
+                    var cur_url =  window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+                    if(cur_url.indexOf("/recruit/scout_jobs_detail") != -1 || cur_url.indexOf("/member/scout_resume_step1") != -1 || cur_url.indexOf("/member/scout_resume_list") != -1){
+                        location.href = location.href;
+                    }
+                    else if(cur_url.indexOf("/recruit/search_jobs_detail") != -1 || cur_url.indexOf("/member/search_resume") != -1 || cur_url.indexOf("/member/search_resume_list") != -1){
+                        location.href = location.href;
+                    }
+                    
+
+                }
+                else {
+                    var ERROR_CODE = jsonData.ERROR_CODE;
+                    if (ERROR_CODE == "202"){
+                        alert("아이디가 없습니다.");                    
+                    }
+                    else if (ERROR_CODE == "203"){
+                        alert("비밀번호가 없습니다.");                    
+                    }
+                    else if (ERROR_CODE == "204"){
+                        alert("회원정보가 없습니다.");                    
+                    }
+                    else if (ERROR_CODE == "205"){
+                        alert("휴면계정으로 전환되었습니다. 휴면복구 해주세요.");                    
+                    }
+                    else if (ERROR_CODE == "205"){
+                        alert("휴면계정으로 전환되었습니다. 휴면복구 해주세요.");                    
+                    }
+                    else if (ERROR_CODE == "206"){
+                        alert("비밀번호가 틀렸습니다.");                    
+                    }
+                    else if(ERROR_CODE == "402"){
+                        OnCloseScoutUserLogin();
+                        alert("전직지원 로그인 아이디 정보가 없습니다.");
+                        OnShowUserLogin();
+                        return;
+                    }
+                    else{
+                        alert(jsonData.message);
+                    }
+                }
+            }
+    </script>
+
+    <style>
+        .onlinereq{ line-height:30px;}
+        .onlinereq thead th{padding:6px 5px; color:#221E1F; font-weight:500; line-height:20px; vertical-align:middle;}
+        .onlinereq tbody th{text-align:left;padding:6px 5px;   color:#221E1F; font-weight:400;}
+        .onlinereq tbody td{padding:6px 5px;  color:#333; line-height:20px;}
+        .onlinereq input[type="text"]{height:42px; margin-right:8px;padding:0 16px; border:1px solid #E3E3E3; border-radius:4px !important; color:#333646; font-size:16px; transition:border-color .25s ease-in-out;}
+        .onlinereq input[type="text"]::placeholder{color:#A9A9A9;}
+        .onlinereq input[type="text"]:focus{border-color:#CCC;}
+        .onlinereq textarea{width:100%; height:90px; padding:14px 16px; border:1px solid #E3E3E3; border-radius:4px; color:#333646; font-size:16px; line-height:18px; transition:border-color .25s ease-in-out;resize:none;}
+        .onlinereq textarea:focus{border-color:#CCC;}
+        @media all and (max-width:640px){
+            .onlinereq input[type="text"]{padding:0 10px; font-size:14px;}
+            .onlinereq textarea{padding:14px 10px;}
+        }
+        .check_list{margin-top:20px;}
+        .online_scroll_box{height:55px; padding:15px; border:1px solid #D1D5DA; background-color:#F9F9F9; color:#333; font-size:14px; line-height:24px; overflow-y:auto;}
+        .online_btn{text-align:center;margin-top:20px;}
+        .online_btn a{padding:0 57px; border:1px solid transparent; border-radius:4px; font-size:16px; font-weight:500; text-align:center; line-height:46px; transition:all .25s ease-in-out;background-color:#C2151C; color:#fff;}
+        .online_btn a:hover{background-color:#A80007;}
+        .popup .popup_cont{padding:0 40px 40px 40px;}
+        .w100{width:100%;}
+        .w80{width:80%;}
+    </style>
+
+    <!-- 활성화 시 active -->
+    <div class="popup confirm2" id="div_online_req">
+        <div class="popup_box" style="width:800px;">
+            <div class="popup_head">
+                <span class="popup_title">온라인 문의</span>
+            </div>
+            <button type="button" class="popup_close">닫기</button>
+            <div class="popup_cont">
+                <table class="onlinereq">
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:20%;">
+                        <col style="width:45%;">	
+                        <col style="width:15%;">
+                        <col style="width:20%;">
+                    </colgroup>				
+                    <tbody>
+                    <tr>
+                        <th>문의 구분</th>
+                        <td>
+                            <select id="POP_MY_GBN" name="POP_MY_GBN">
+                                <option value="">------구분------</option>							
+                            </select>
+                        </td>					
+                        <th>작성자</th>
+                        <td>
+                            <input class="inp" type="text" id="POP_MY_NAME" name="POP_MY_NAME"  placeholder="작성자" value=""/> 
+                        </td>					
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td>
+                            <input class="inp" type="text" id="POP_MY_EMAIL" name="POP_MY_EMAIL" placeholder="E-mail" value=""/> 
+                        </td>					
+                        <th>연락처</th>
+                        <td>
+                            <input class="inp" type="text" id="POP_MY_TEL" name="POP_MY_TEL" style="margin-right:0;" placeholder="휴대폰번호" value=""/>
+                        </td>					
+                    </tr>
+                    <tr>
+                        <th>제목</th>
+                        <td colspan="3">
+                            <input class="inp w100" type="text" id="POP_MY_REQ_TITLE" name="POP_MY_REQ_TITLE"  placeholder="제목" />
+                        </td>					
+                    </tr>
+                    <tr>
+                        <th>내용</th>
+                        <td colspan="3">
+                            <textarea name="POP_MY_REQ_CONTENT" id="POP_MY_REQ_CONTENT" style="padding-top:20px;" cols="30" rows="10" placeholder="내용"></textarea>
+                        </td>					
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td colspan="3">
+                            <input type="text" id="POP_MY_CHECK_STRING" class="w80" name="POP_MY_CHECK_STRING" placeholder="자동 등록 방지를 위해 오른쪽 숫자를 입력해 주세요" />
+                            &nbsp;<span id="POP_MY_CHECK_STRING_INFO"></span><br/>
+                            <input type="hidden" id="POP_MY_CHECK_STRING_IMAGE" name="POP_MY_CHECK_STRING_IMAGE" value=""/>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div>
+                    
+                </div>
+                <div class="check_list">
+                    <span class="check">
+                        <input type="checkbox" id="POP_MY_CHECK" name="POP_MY_CHECK" value="SAVE_LOGIN">
+                        <label for="POP_MY_CHECK"> 개인정보 수집 및 이용동의 (필수)</label>
+                    </span>
+                </div>
+                <div class="online_scroll_box">
+                    수집 및 이용 목적 : 서비스 문의 및 각종 제안사항에 대한 답변, 민원처리, 결과 회신 등의 서비스 제공<br/>
+                    수집항목 : 작성자, 연락처, 이메일<br/>
+                    보유기간 : 소비자의 불만 또는 분쟁처리에 관한 기록에 의거하여 규정된 보존기관 보관
+                </div>
+
+                <div class="check_list">
+                    <span class="check">
+                        <input type="checkbox" id="POP_MY_MARKETING" name="POP_MY_MARKETING" value="">
+                        <label for="POP_MY_MARKETING">마케팅 활용 정보 동의 (선택)</label>
+                    </span>
+                </div>
+                
+                <div class="online_scroll_box">
+                    수집 및 이용 목적 : 이벤트, 설문조사 및 광고성 정보 제공 등의 홍보 및 마케팅 활용<br/>
+                    수집항목 : 작성자, 연락처, 이메일<br/>
+                    보유기간 : 이용 목적 달성 시까지 보관
+                </div>
+                
+                <div class="online_btn">
+                    <a href="javascript:OnOnlineReqInsert()" >등록</a>
+                    <a href="javascript:OnCloseContact();" >닫기</a>
+                    <input type="hidden" id="POP_G_MY_ID" name="POP_G_MY_ID" value=""/>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        function OnCloseContact(){	
+            $("#div_online_req").removeClass("active");		
+        }
+
+        function OnContactUSLayer(){
+            var data = {};
+
+            $.ajax({
+                url: "",
+                type: "POST",
+                data: JSON.stringify(data),
+                contentType: "application/json",
+                success: function(data) {
+                    Callback_OnContactUSLayer(data);
+                },
+                error: function(err) {
+                    alert(err.responseText);
+                }
+            });
+            
+        }
+
+        function Callback_OnContactUSLayer(result){
+            var jsonData = JSON.parse(result);		
+            if (jsonData.result=="ok")
+            {
+                var data = jsonData.data;
+                var CHECK_STRING_IMAGE = data[0][0].CHECK_STRING_IMAGE;
+                var html = '<img src="/images/'+CHECK_STRING_IMAGE+'"" border="0" align="absmiddle">';
+                $("#POP_MY_CHECK_STRING_INFO").html(html);
+                $("#POP_MY_CHECK_STRING_IMAGE").val(CHECK_STRING_IMAGE);
+                var i = 0;
+                var data1 = data[1];
+                var html = '';
+                $("#POP_MY_GBN option").remove();
+                html = '<option value="">------구분------</option>';
+                $("#POP_MY_GBN").append(html);
+                for(i=0;i<data1.length;i++){
+                    html = '<option value="'+data1[i].CODE+'">'+data1[i].NAME+'</option>';
+                    $("#POP_MY_GBN").append(html);
+                }
+                $("#POP_MY_GBN").niceSelect("update");
+
+                var data2 = data[2];
+                $("#POP_G_MY_ID").val(data2[0].MY_ID);
+                $("#POP_MY_NAME").val(data2[0].NAME);
+                $("#POP_MY_EMAIL").val(data2[0].EMAIL);
+                $("#POP_MY_TEL").val(data2[0].HP_TEL);
+                
+                $("#POP_MY_REQ_TITLE").val("");
+                $("#POP_MY_REQ_CONTENT").val("");
+                $("#POP_MY_GBN").val("");
+
+                $("#POP_MY_CHECK_STRING").val("");
+
+                $("input[name=POP_MY_CHECK]")[0].checked = false;
+                
+                $("#div_online_req").addClass("active");
+            }
+        }
+
+        function OnOnlineReqInsert(){
+            if($("#POP_MY_GBN").val()==""){
+                alert("구분을 선택해주세요.");
+                return;
+            }
+            if($("#POP_MY_NAME").val()==""){
+                alert("이름을 입력해주세요.");
+                return;
+            }
+            if($("#POP_MY_EMAIL").val()!=""){
+                if(ValidateEmail($("#POP_MY_EMAIL").val())==false){
+                    alert("이메일 형식이 잘못되었습니다. 다시 입력해주세요");
+                    return;
+                }
+            }
+            
+            if($("#POP_MY_TEL").val()==""){
+                alert("전화번호를 입력해주세요.");
+                return;
+            }
+            if(ValidatePhoneNumber($("#POP_MY_TEL").val())==false){
+                alert("전화번호 형식이 잘못되었습니다. 다시 입력해주세요");
+                return;
+            }
+            if($("#POP_MY_REQ_TITLE").val()==""){
+                alert("제목을 입력해주세요.");
+                return;
+            }
+            if($("#POP_MY_REQ_CONTENT").val()==""){
+                alert("내용을 입력해주세요.");
+                return;
+            }
+            if($("#POP_MY_CHECK_STRING").val()==""){
+                alert("자동 등록 방지 숫자를 입력해 주세요.");
+                return;
+            }
+            if($("input[name=POP_MY_CHECK]:checked").length == 0){
+                alert("개인정보 수집 및 이용 동의에 체크해주세요.");
+                return;
+            }
+            var MARKET_YN = "N";
+            if($("input[name=POP_MY_MARKETING]:checked").length > 0){
+                MARKET_YN = "Y";
+            }
+
+            var data = {};
+            data.MY_ID = $("#POP_G_MY_ID").val();
+            data.MY_NAME = $("#POP_MY_NAME").val();
+            data.MY_EMAIL = $("#POP_MY_EMAIL").val();
+            data.MY_TEL = $("#POP_MY_TEL").val();
+            data.MY_REQ_TITLE = $("#POP_MY_REQ_TITLE").val();
+            data.MY_REQ_CONTENT = $("#POP_MY_REQ_CONTENT").val();
+            data.MY_GBN = $("#POP_MY_GBN").val();		
+            data.MY_CHECK_STRING = $("#POP_MY_CHECK_STRING").val();
+            data.MY_CHECK_STRING_IMAGE = $("#POP_MY_CHECK_STRING_IMAGE").val();
+            data.MARKET_YN = MARKET_YN;
+
+            $.ajax({
+                url: "/member/my_online_req_insert_check_string",
+                type: "POST",
+                data: JSON.stringify(data),
+                contentType: "application/json",
+                success: function(data) {
+                    Callback_OnOnlineReqInsert(data);
+                },
+                error: function(err) {
+                    alert(err.responseText);
+                }
+            });
+        }
+
+        function Callback_OnOnlineReqInsert(result){
+            var jsonData = JSON.parse(result);
+            if (jsonData.result == "ok"){
+                alert("온라인문의가 등록되었습니다.");
+                OnCloseContact();	
+                var current_url = window.location.href;
+                if(current_url.indexOf("/member/service")!=-1){
+                    var url = "/member/service";
+                    location.href = url;
+                }
+                else if(current_url.indexOf("/member/online_req")!=-1){
+                    var url = "/member/online_req";
+                    location.href = url;
+                }
+            }
+            else {
+                var ERROR_CODE = jsonData.ERROR_CODE;
+                if (ERROR_CODE == "1"){
+                    alert("자동등록 방지를 위한 코드가 일치하지 않습니다. 다시 한번 확인해 주세요.");
+                }
+                else if (ERROR_CODE == "2"){
+                    alert("작성자 이름이 없습니다. 다시 입력해주세요.");
+                }
+                else if (ERROR_CODE == "3"){
+                    alert("이메일 주소가 없습니다. 다시 입력해주세요.");
+                }
+                else if (ERROR_CODE == "4"){
+                    alert("전화번호가 없습니다. 다시 입력해주세요.");
+                }
+                else if (ERROR_CODE == "5"){
+                    alert("제목이 없습니다. 다시 입력해주세요.");
+                }
+                else if (ERROR_CODE == "6"){
+                    alert("내용이 없습니다. 다시 입력해주세요.");
+                }
+                else if (ERROR_CODE == "7"){
+                    alert("구분이 없습니다. 다시 입력해주세요.");
+                }
+                else if (ERROR_CODE == "8"){
+                    alert("자동등록방지 숫자가 없습니다. 다시 입력해주세요.");
+                }
+                else if (ERROR_CODE == "9"){
+                    alert("자동등록방지 숫자이미지가 없습니다.");
+                }
+
+            }
+        }
+
+        function ValidateEmail(mail) 
+        {
+            var regExp = /[a-zA-Z0-9_]+@[a-zA-Z]+.[a-zA-Z]+/g;
+            if(!regExp.test(mail))
+            {
+                return false;
+            }
+            else
+            {        
+                return true;
+            }
+        }
+
+        function ValidatePhoneNumber(phoneno)
+        {
+            var regExp1 = /(^01.{1}|[0-9-]{3})([0-9-]+)([0-9]{4})/g;	
+            if(!regExp1.test(phoneno))
+            {
+                return false;
+            }
+            else
+            {        
+                return true;
+            }
+        }
+    </script>
+
+    <button type="button" class="scroll_top"><img src="images/common/top.png" alt="top"></button>
+	
+    <script>AOS.init();</script>
+
+</div>
+</body>
+</html>
