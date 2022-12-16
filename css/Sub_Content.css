@@ -272,9 +272,12 @@
 /* Inquiry */
 .inquiry_time {font-size: 16px; text-align: center; line-height: 24px;}
 .box.bg.inquiry .box_cont {display: flex; flex-direction: row;    justify-content: center;gap: 48px;}
-.box.bg.inquiry .box_inquiry {width: 48%;display: flex;flex-direction: column;background: #fff;box-shadow: 0px 6px 20px 0 hsl(224deg 56% 34% / 20%);padding: 36px 40px;border-radius: 16px;gap: 52px;}
+.box.bg.inquiry .box_inquiry {width: 48%;display: flex;flex-direction: column;background: #fff;box-shadow: 0px 6px 16px 0 rgb(0 0 0 / 25%);padding: 36px 64px;border-radius: 16px;gap: 52px;}
 .box.bg.inquiry .inquiry_title {font-size: 28px; color: #191919; font-weight: 600; line-height: 32px;}
 .box.bg.inquiry .inquiry_detail {font-size: 18px;}
+
+.box.bg.inquiry .inquiry_detail li {display: flex;}
+.box.bg.inquiry .inquiry_detail li span {width: 20%;}
 
 .box.bg.inquiry .inquiry_detail li + li{margin-top: 32px;}
 
