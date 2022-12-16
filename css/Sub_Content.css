@@ -133,8 +133,8 @@
 
 .box {font-family: 'Noto Sans KR';}
 .box + .box {margin-top: 150px;}
-#contents .box:last-child:not(.gray) {margin-bottom: 120px;}
-.box.gray {width: 100vw;position: relative;background: #f9f9f9;left: calc(-50vw + 50%);padding: 100px 0 120px;}
+#contents .box:last-child:not(.gray) {margin-bottom: 200px;}
+.box.gray {width: 100vw;position: relative;background: #f9f9f9;left: calc(-50vw + 50%);padding: 100px 0 200px;}
 
 /* box bg */
 .box.bg{position: relative; /*width: 100%;*/ }
